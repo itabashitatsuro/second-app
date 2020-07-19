@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>絶対合格　受験指導</title>
+    <meta name="descripton" content="高校受験専門の塾" >
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body id="home" class="big-bg">
+    <div>
+      <header class="header-wrapper">
+        <h1>○○進学塾</h1>
+        <nav>
+          <ul class="main-bar">
+            <li><%= link_to '保護者様専用ログイン', log_in_content_path(:id), method: :get %></li>
+            <li><%= link_to '詳細', '/contents/show', method: :get %></li>
+            <li><%= link_to 'お知らせ', done_content_path(:id), method: :get %></li>
+            <li><%= link_to 'お問い合わせ', form_content_path(:id), method: :get %></li>
+            <li><%= link_to 'ホーム', root_path, method: :get %></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+    <%= yield %>
+  </body>
+</html>

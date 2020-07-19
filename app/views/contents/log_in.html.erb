@@ -1,0 +1,33 @@
+<h1>保護者様専用ページ</h1>
+
+<% if user_signed_in? %> <!-- ユーザーがログインしているか調べる -->
+  <!-- ユーザーがログインしていた時の処理 -->
+  <h2 class="user-name"> 現在 <%= current_user.name %> さんがログインしています </h2> 
+  <h4 class="user-email"> メールアドレス： <%= current_user.email %> </h4>
+  <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: 'post'%> <!-- ログアウトをする -->
+
+<div class="parent-form">
+  <h3 class="parent-message">
+  〜　塾の様子　〜
+  </h3>
+  <p class="boss-message">
+    テストメッセージ
+  </p>
+  <h3 class="form-title">
+  〜　お悩み相談フォーム　〜
+  </h3>
+  <p class="form-message">
+  成績のこと、将来のこと、お子様のことなど、なんでも大丈夫です。<br>
+  相談内容を以下のフォームに入力し、送信してください。
+  </p>
+  <div class="form-content">
+  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdI3puT6q4tbnV9kVSWu2MnwA3aD8oHG5NkUZUe1z9TZEXdXQ/viewform?embedded=true" width="800" height="1200" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>
+  </div>
+</div>
+
+<% else %>
+  <!-- ユーザーがログインしていなかった時の処理 -->
+  <h2> 現在ログインしていません </h2>
+  <%= link_to "ログイン", new_user_session_path, class: 'post' %> <!-- ログイン画面に移行する -->
+  <%= link_to "新規登録", new_user_registration_path, class: 'post' %> <!-- 新規登録画面に移行する -->
+<% end %>

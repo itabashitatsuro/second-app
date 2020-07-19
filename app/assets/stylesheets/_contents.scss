@@ -1,0 +1,345 @@
+// Place all the styles related to the contents controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+#home {
+  background-image: image-url('background.jpg');
+  min-height: 100vh;
+}
+
+.big-bg {
+  background-size: cover;
+  background-position: center top;
+    background-position-x: center;
+    background-position-y: top;
+  background-repeat: no-repeat;
+}
+
+.title {
+  display: none;
+}
+
+.html {
+  font-size: 100%;
+}
+
+.body {
+  line-height: 1.7;
+  color: #ffffff;
+}
+
+.header-wrapper{
+  display: flex;
+  justify-content: space-between;
+}
+
+h1 {
+  display: block;
+  font-size: 2em;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.main-bar{
+  display: flex;
+  font-size: 10px;
+  margin-top: 34px;
+  list-style: none;
+}
+
+.main-bar li{
+  margin-left: 20px;
+}
+
+.main-bar a {
+  text-decoration: none;
+  background-color: transparent;
+  color: #e3a44e;
+}
+
+/* 以下 content.index */
+
+.home-content {
+  text-align: center;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wrapper {
+  max-width: 1100px;
+  margin: 30 auto;
+  padding: 0 4%;
+}
+
+.page-title {
+  font-size: 5rem;
+  font-family: 'Philosopher', serif;
+  font-weight: normal;
+  color: gold;
+}
+
+.home-content p {
+  font-size: 1.125rem;
+  margin: 10px 0 25px;
+  color: gold;
+}
+
+.top-content{
+  margin-top: 50px;
+  border: 6px solid goldenrod;
+}
+
+.top-message{
+  font-size: 30px;
+  font-family: serif;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #ffffff;
+}
+.message-text{
+  margin-bottom: 20px;
+  text-align: center;
+  color: #ffffff;
+}
+/* 以下 content.show */
+
+.Menu-contents{
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+.Menu-box-Info{
+  color: #ffffff;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: serif;
+}
+.message{
+  text-align: left;
+  color: #ffffff;
+}
+.memo{
+  text-align: center;
+  color: #ffffff;
+
+}
+.interview-link{
+  border-bottom: 1px #ddd solid;
+  color: #e3a44e;
+  padding: 10px;
+  text-align: center;
+  text-decoration-style: solid;
+}
+.schedule{
+  margin-left: 200px;
+  text-align: left;
+  color: #ffffff;
+}
+.rule{
+  text-decoration-style: solid;
+  text-decoration: none;
+  color: #e3a44e;
+}
+/* 以下 content.done */
+
+.new-contents{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.article{
+  width: 75%;
+}
+.new-Info{
+  position: relative;
+  padding-top: 4px;
+  margin-bottom: 40px;
+  color: #ffffff;
+}
+.new-date {
+  background: #e3a44e;
+  border-radius: 50%;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  color: #fff;
+  width: 100px;
+  height: 100px;
+  font-size: 1.625rem;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  padding-top: 10px;
+}
+.new-date span{
+  font-size: 1rem;
+  border-top: 1px rgba(225,225,225,.5) solid;
+  padding-top: 6px;
+  display: block;
+  width: 60%;
+  margin: 0 auto;
+}
+.new-title{
+  font-family: serif;
+  font-size: 2rem;
+  font-weight: normal;
+}
+.new-title,
+.new-text{
+  margin-left: 120px;
+}
+.article img{
+  margin-bottom: 20px;
+}
+.new-comment{
+  font-family: serif;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.aside{
+  width: 30%;
+  justify-content: flex-end;
+}
+.aside p{
+  padding: 12px 5px;
+}
+
+.sub-title{
+  width: 100px;
+  font-size: 1.375rem;
+  padding: 0 8px 8px;
+  border-bottom: 2px "0bd solid";
+  font-weight: normal;
+  color: #ffffff;
+}
+.sub-menu{
+  margin-bottom: 60px;
+  list-style: none;
+}
+.menu{
+  color: #ffffff;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+}
+/* content.form */
+
+#location .wrapper{
+  display: flex;
+  justify-content: space-between;
+}
+
+.locaion-info{
+  justify-content: flex-start;
+}
+
+.sub-title{
+  width: auto;
+  text-align: left;
+}
+.address{
+  text-align: left;
+  color: #ffffff;
+}
+.location-map{
+  height: 60%;
+  width: 70%;
+}
+
+/* contents.interview */
+
+.interview-content {
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  gap: 50px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  margin-top: 6%;
+  margin-bottom: 50px;
+}
+
+.point{
+  width: 100%;
+  text-align: center;
+  color: #ffffff;
+}
+
+.point-comment{
+  text-align: center;
+  color: #ffffff;
+}
+
+/* content.rule */
+
+.rule-head{
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff;
+}
+
+.rule-content{
+  text-align: left;
+  color: #ffffff;
+}
+
+/* content.log_in */
+.field{
+  color: #ffffff;
+}
+.user-name{
+  color: #ffffff;
+}
+.user-email{
+  color: #ffffff;
+}
+.post{
+  color: #ffffff;
+}
+.form-title{
+  margin: 30px auto;
+  text-align: center;
+  font-size: 30px;
+  color: #ffffff;
+}
+.form-message{
+  margin: 30px auto;
+  text-align: center;
+  color: #ffffff;
+}
+.form-content{
+  text-align: center;
+}
+.parent-message{
+  margin: 30px auto;
+  text-align: center;
+  font-size: 30px;
+  color: #ffffff;
+}
+.boss-message{
+  margin: 30px auto;
+  text-align: center;
+  color: #ffffff;
+}
+.submit{
+  color: #ffffff;
+}
+.headline{
+  color: #ffffff;
+}

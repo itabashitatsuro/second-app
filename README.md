@@ -1,24 +1,16 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+アプリケーション:Application
+・ECサイト（学習塾を想定）
 
-Things you may want to cover:
+説明:Description
+・学習塾のHPを想定して作成しています。
+・施設概要としての必要な情報を記載しています。
+・ユーザーログイン機能をつけ、専用のお問い合わせページ機能を実装しています。
+※お問い合わせはGoogleフォームを用いている。
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+開発環境:Development environment
+Ruby 2.5.1
+Ruby on Rails 6.0.0
+PostgreSQL
+Heroku.
